@@ -19,11 +19,11 @@
   },
 
   "require": {
-    "eureka/component-config": "^1.2",
-    "eureka/component-http": "^1.0",
+    "eureka/component-config": "^1.1",
+    "eureka/component-http": "^1.2",
     "eureka/component-mcrypt": "^1.0",
     "eureka/component-password": "^1.0",
-    "eureka/interface-bag": "^1.0"
+    "eureka/interface-bag": "^1.0",
   }
 
 }

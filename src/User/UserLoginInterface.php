@@ -12,7 +12,7 @@ namespace Eureka\Component\User;
 /**
  * Interface User
  *
- * @package Eureka\Component\User
+ * @author Romain Cottard
  */
 interface UserLoginInterface
 {

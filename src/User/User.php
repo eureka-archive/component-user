@@ -17,7 +17,9 @@ use Eureka\Component\User\Exception\UserNotFoundException;
 use Eureka\Interfaces\Bag\BagInterface;
 
 /**
- * Interface User
+ * Class User
+ *
+ * @author Romain Cottard
  */
 class User implements UserLoginInterface
 {
