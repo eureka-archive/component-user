@@ -13,7 +13,6 @@ use Eureka\Component\Config\Config;
 use Eureka\Component\Http\Session;
 use Eureka\Component\Mcrypt\Mcrypt;
 use Eureka\Component\Password\Password;
-use Eureka\Component\User\Exception\UserNotFoundException;
 use Eureka\Interfaces\Bag\BagInterface;
 
 /**
@@ -123,14 +122,14 @@ class User implements UserLoginInterface
      * @param  string $passwordPlainText
      * @param  string $passwordHash
      * @return $this
-     * @throws UserAuthenticationException
-     * @throws UserNotFoundException
+     * @throws Exception\UserAuthenticationException
+     * @throws Exception\UserNotFoundException
      */
     public function login($login, $passwordPlainText, $passwordHash)
     {
         $password = new Password($passwordPlainText);
         if (!$password->verify($passwordHash)) {
-            throw new UserAuthenticationException();
+            throw new Exception\UserAuthenticationException();
         }
 
         $this->isAuthenticated = true;
